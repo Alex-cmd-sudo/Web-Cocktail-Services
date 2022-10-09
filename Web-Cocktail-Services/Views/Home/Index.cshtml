@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "CocktailDB";
+}
+
+<div class="container-fluid align-items-center text-center">
+    <h1 class="display-4"><strong>Buscador de bebidas</strong></h1>
+    
+    
+    <div class="album py-5">
+        <div class="container">
+            <div class="col-12 mb-4 align-items-center text-center row align-items-center justify-content-center">
+                <p>Instrucciones</p>
+                <div class="col-6 col-md-6 input-group mb-3">                    
+                     <ol>
+                        <li class="textStart mb-3">Escribe el nombre de la bebida deseada, por ejemplo "margarita"</li>                
+                        <li class="textStart mb-3">Click sobre el boton buscar</li>                
+                    </ol>
+                </div>
+            </div>
+            <div class="col-12 mb-4 align-items-center text-center row align-items-center justify-content-center">                
+                <div class="col-6 col-md-6 input-group mb-3">                   
+                  <input type="text" class="form-control" id="byName" placeholder="Busqueda por nombre" 
+                  aria-label="name" aria-describedby="button-addon2" min="3" maxlength="15" required>
+                  <button class="btn btn-outline-secondary" onclick="valiarConsumirNombre()" type="button" id="btnName">Buscar</button>
+                </div>                
+            </div>
+            
+            <div id="layoutInfo" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">            
+            </div>            
+        </div>        
+    </div>    
+</div>
